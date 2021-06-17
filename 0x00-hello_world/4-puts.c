@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - entrada al programa
- * 
- * Return: 0 (Si funciona)
+ *main - Entrada al programa
+ **
+ *Return: siempre 0 (Si funciona)
  */
 int main(void)
 {
