@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * Main punto de entrada a mi programa
+ * main punto de entrada a mi programa
  *
  *Return 0 (si funciona)
  */
