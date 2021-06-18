@@ -3,10 +3,9 @@
 #include <time.h>
 /**
  * main - entry block
- * @void: no argument
  * Return: 0 (Sucess)
  */
-int mainI(void)
+int main(void)
 {
 	int n;
 
@@ -24,5 +23,5 @@ int mainI(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	return (0)
+	return (0);
 }
