@@ -10,28 +10,28 @@ void jack_bauer(void)
 
 	while (i < 1440)
 	{
-		_putchar(d + '0');
-		_putchar(c + '0');
-		_putchar(':');
-		_putchar(b + '0');
 		_putchar(a + '0');
+		_putchar(b + '0');
+		_putchar(':');
+		_putchar(c + '0');
+		_putchar(d + '0');
 		_putchar('\n');
 
-		a++;
-		if (a > 9)
+		d++;
+		if (d > 9)
 		{
 			d =  0;
-			b++;
-		}
-		if (b > 5)
-		{
-			b = 0;
 			c++;
 		}
-		if (c > 9)
+		if (c > 5)
 		{
 			c = 0;
-			d++;
+			b++;
+		}
+		if (b > 9)
+		{
+			b = 0;
+			a++;
 		}
 		i++;
 	}
