@@ -11,7 +11,7 @@ void times_table(void)
 	{
 		for (c = 0; c <= 9; c++)
 		{
-			n = i * j;
+			n = i * c;
 			if (c == 0)
 			{
 				_putchar(n + '0');
@@ -21,7 +21,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(k + '0');
+				_putchar(n + '0');
 			}
 			else if (n >= 10)
 			{
