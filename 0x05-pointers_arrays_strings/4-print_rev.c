@@ -14,10 +14,10 @@ void print_rev(char *s)
 	c = 0;
 
 	while (s[c] != '\0')
-	{
+	
 		c++;
 	c--;
-	}
+	
 	for (i = 0; i < c; i++)
 	{
 		temporal = s[i];
