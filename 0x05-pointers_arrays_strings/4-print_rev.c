@@ -7,21 +7,17 @@
  */
 void print_rev(char *s)
 {
-	int i, c;
-	char temporal;
+	int i;
 
-	i = 0;
-	c = 0;
-
-	while (s[c] != '\0')
-	
-		c++;
-	c--;
-	
-	for (i = 0; i < c; i++)
+	while (s[i] != '\0')
 	{
-		temporal = s[i];
-		s[i] = s[c];
-		s[c] = temporal;
+		i++;
 	}
+	i--;
+	while (s[i] != '\0')
+	{
+		_putchar(s[i--]);
+	}
+	_putchar('\n');
+
 }
