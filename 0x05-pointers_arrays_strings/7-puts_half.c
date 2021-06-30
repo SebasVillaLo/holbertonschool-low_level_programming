@@ -2,7 +2,7 @@
 /**
 * puts_half - check the code for Holberton School students.
 * @str: character
-* Return: Always 0 
+* Return: Always 0
 */
 void puts_half(char *str)
 {
