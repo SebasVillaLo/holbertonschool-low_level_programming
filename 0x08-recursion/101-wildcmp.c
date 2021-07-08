@@ -1,11 +1,23 @@
-  
-void _puts_recursion(char *s);
-void _print_rev_recursion(char *s);
-int _strlen_recursion(char *s);
-int factorial(int n);
-int _pow_recursion(int x, int y);
-int _sqrt_recursion(int n);
-int is_prime_number(int n);
-int is_palindrome(char *s);
-int wildcmp(char *s1, char *s2);
-int _putchar.c(char c);
+#include "holberton.h"
+
+/**
+ * wildcmp - prints buffer in hexa
+ * @s1: Character
+ * @s2: Character
+ * Return: Nothing.
+ */
+int wildcmp(char *s1, char *s2)
+{
+	if (*s2 == '*')
+		return (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2));
+	if (*s1 == '\0' && *s2 == '*')
+		return (wildcmp(s1, s2 + 1));
+	if (*s1 == '\0' && *s2 != '*')
+		return (0);
+	if (*s2 == '\0')
+		return (0);
+	if (*s2 == *s1)
+		return (wildcmp(s1 + 1, s2 + 1));
+	if (*s1 == '\0' && *s2 == '\0')
+		return (1);
+}
