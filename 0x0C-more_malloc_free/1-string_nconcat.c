@@ -4,7 +4,7 @@
  * string_nconcat - Join in the program
  * @s1: character
  * @s2: character
- * @sn: character
+ * @n: character
  * Return: pointer
  */
 
