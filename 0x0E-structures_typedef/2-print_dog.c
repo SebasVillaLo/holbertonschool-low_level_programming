@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "dog.h"
-#define NILL "(nil)"
 
 /**
  * print_dog - prototipo
@@ -10,10 +9,14 @@
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
-		return;
-	printf(
-		"Name: %s\nAge: $f\nOwner: $s\n",
-		(d->name == NULL) ? NILL : d->name,
-		d->age,(d->owner == NULL) ? NILL : d->owner
-		);
+	return;
+	if (d->name == NULL)
+	printf("Name: (nil)\n");
+	else
+	printf("Name: %s\n", d->name);
+	printf("Age: %.6f\n", d->age);
+	if (d->owner == NULL)
+	printf("Owner: (nil)\n");
+	else
+	printf("Owner: %s\n", d->owner);
 }
