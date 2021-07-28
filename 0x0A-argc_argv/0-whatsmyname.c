@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints buffer in hexa
+ * main - Entry point
  * @argc: Character
  * @argv: Character
  * Return: 0
