@@ -1,18 +1,18 @@
 #include <stdio.h>
 /**
- *   * main - entry block
- *     * Return: 0 (success)
- *     **/
+ * main - entry block
+ * Return: 0 (success)
+ **/
 int main(void)
 {
 	int i, p;
 
-	for (i = '0'; i <= '9'; i++)
+	for (p = '0'; p <= '9'; p++)
 	{
-	for (p = i + 1; p <= '9'; p++)
+	for (i = p + 1; i <= '9'; i++)
 	{
-		putchar(i);
 		putchar(p);
+		putchar(i);
 		if (i != '8' || p != '9')
 		{
 			putchar(',');
