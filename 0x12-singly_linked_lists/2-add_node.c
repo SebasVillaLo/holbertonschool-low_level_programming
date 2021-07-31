@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * add_node - agregar nuevo nodo
- * @*head: doble puntero
+ * @head: doble puntero
  * @str: const
  * Return: head
  */
@@ -10,10 +10,10 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *new_nodo;
 	int i = 0;
 
+	new_nodo = malloc(sizeof(list_t));
+	:
 	if (new_nodo == NULL)
 		return (NULL);
-
-	new_nodo = malloc(sizeof(list_t));
 
 	while (str[i] != '\0')
 	{
