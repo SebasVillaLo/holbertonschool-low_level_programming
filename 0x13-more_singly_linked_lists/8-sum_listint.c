@@ -6,7 +6,7 @@
  */
 int sum_listint(listint_t *head)
 {
-	int s = 0;
+	int save, o  = 0;
 
 	if (head == NULL)
 	{
@@ -14,7 +14,8 @@ int sum_listint(listint_t *head)
 	}
 	while (head)
 	{
-		s += head->n;
+		save += head->n;
+		o += save;
 		head = head->next;
 	}
 	return (s);
