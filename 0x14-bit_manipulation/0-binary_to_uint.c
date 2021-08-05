@@ -19,12 +19,13 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		while (i >= 0)
-		{
-			r = r + ((b[i] - '0') * bs);
-			bs = bs * 2;
-			i--;
-		}
-		return (r);
+		i++;
 	}
+	while (i >= 0)
+	{
+		r = r + ((b[i] - '0') * bs);
+		bs = bs * 2;
+		i--;
+	}
+	return (r);
 }
