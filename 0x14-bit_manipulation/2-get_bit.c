@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * get_bit - obtener 
+ * get_bit - obtener
  * @n: unsigned long int
  * @index: unsigned int
  */
