@@ -17,7 +17,7 @@ void copy_file(const char *ar1, const char *ar2)
 		exit(98);
 	}
 	nf = open(ar2, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while ((rd == read(of, buf, 1024)) > 0)
+	while ((rd = read(of, buf, 1024)) > 0)
 	{
 		if (write(nf, buf, rd) != rd || nf == -1)
 		{
