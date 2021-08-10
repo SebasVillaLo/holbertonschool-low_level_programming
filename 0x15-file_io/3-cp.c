@@ -8,7 +8,7 @@
 void copy_file(const char *ar1, const char *ar2)
 {
 	int of, nf, rd;
-	char bug[1024];
+	char buf[1024];
 
 	of = open(ar1, O_RDONLY);
 	if (!ar1 || of == -1)
@@ -21,23 +21,23 @@ void copy_file(const char *ar1, const char *ar2)
 	{
 		if (write(nf, buf, rd) != rd || nf == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", ar2);
 			exit(99);
 		}
 	}
 	if (close(of) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", o);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", of);
 		exit(100);
 	}
-	if (close(t) == -1)
+	if (close(nf) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", t);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", nf);
 		exit(100);
 	}
 	if (rd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", ar1);
 		exit(98);
 	}
 }
