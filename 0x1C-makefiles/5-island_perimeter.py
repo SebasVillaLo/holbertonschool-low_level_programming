@@ -1,11 +1,14 @@
 #!/usr/bin/python3
 """
-...
+that returns the perimeter of the island described in grid
 """
+
+
 def island_perimeter(grid):
     """
-    ...
+    This is funtion for resolved the problem
     """
+
     width = len(grid[0])
     height = len(grid)
     iter = 0
@@ -22,4 +25,3 @@ def island_perimeter(grid):
                     iter += 1
 
     return iter
-    
